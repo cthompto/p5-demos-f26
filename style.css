@@ -9,6 +9,13 @@ canvas {
   display: block;
   padding: 20px;
   margin: auto;
+}
+
+
+canvas.home  {
+  display: block;
+  padding: 20px;
+  margin: auto;
   border-radius: 50%;
 }
 
@@ -17,6 +24,7 @@ h1 {
   font-family: "Redaction 50", serif;
   font-weight: 700;
   font-style: normal;
+  text-align: center;
 }
 
 h2 {
@@ -32,6 +40,7 @@ p {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  padding-left: 20%;
 }
 
 a {

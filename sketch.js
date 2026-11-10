@@ -7,6 +7,7 @@ let rightEyeY;
 function setup() {
   canvas = createCanvas(400, 400);
   canvas.parent("sketch-holder");
+  canvas.class("home");
   rectMode(CENTER);
   angleMode(DEGREES);
   noStroke();
@@ -19,16 +20,17 @@ function draw() {
 }
 
 function mouthRender() {
-  stroke(0);
-  strokeWeight(10);
-  arc(width/2, 300, 150, 50, 20, 160, OPEN);
   if(mouseX > 175 && mouseX < 225) {
     if(mouseY > 305 && mouseY < 350) {
       fill(252, 45, 214);
-    arc(width/2, 320, 50, 80, 20, 160, OPEN);
+      noStroke();
+      arc(width/2, 320, 50, 80, 20, 160, OPEN);
     }
   }
-
+  noFill();
+  stroke(0);
+  strokeWeight(10);
+  arc(width/2, 300, 150, 50, 20, 160, OPEN);
 }
 
 function eyeRender() {
@@ -50,7 +52,7 @@ function eyeRender() {
   ellipse(rightEyeX, rightEyeY, 25,50);
 
   // draw ring around eye to clean up look
-  stroke(144, 30, 252);
+  stroke(144, 3, 252);
   strokeWeight(12);
   noFill();
   ellipse(125, 175, 55, 110);

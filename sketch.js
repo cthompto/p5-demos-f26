@@ -7,7 +7,7 @@ let rightEyeY;
 function setup() {
   canvas = createCanvas(400, 400);
   canvas.parent("sketch-holder");
-  canvas.class("home");
+  canvas.class("home"); // only needed for chelsea's code, not yours
   rectMode(CENTER);
   angleMode(DEGREES);
   noStroke();

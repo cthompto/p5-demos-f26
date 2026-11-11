@@ -1,4 +1,5 @@
 let mySong;
+let canvas;
 
 async function setup() {
   canvas = createCanvas(400, 400);
@@ -13,5 +14,14 @@ async function setup() {
 
 function draw() {
   background(144, 3, 252);
+}
+
+function mousePressed() {
+  if(mySong.isPlaying()) {
+    mySong.stop();
+  }
+  else {
+    mySong.start();
+  }
 }
 

@@ -11,12 +11,17 @@ canvas {
   margin: auto;
 }
 
-
 canvas.home  {
   display: block;
   padding: 20px;
   margin: auto;
   border-radius: 50%;
+}
+
+div.ex-text {
+  display: block;
+  max-width: 600px;
+  margin: auto;
 }
 
 h1 {
@@ -34,13 +39,20 @@ h2 {
   font-style: normal;
 }
 
+h3 {
+  color: whitesmoke;
+  font-family: "Redaction 50", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+}
+
 p {
   color: whitesmoke;
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  padding-left: 20%;
 }
 
 a {

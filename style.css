@@ -18,6 +18,12 @@ canvas.home  {
   border-radius: 50%;
 }
 
+#dog {
+  display: block;
+  width: 400px;
+  margin: auto;
+}
+
 div.ex-text {
   display: block;
   max-width: 600px;
